@@ -1,9 +1,9 @@
 import com.pavel.textparser.task.TaskNumberOne;
 import com.pavel.textparser.entity.DividedText;
 import com.pavel.textparser.logics.TextManager;
+import com.pavel.textparser.task.TaskNumberTwo;
 
 import java.io.IOException;import java.lang.String;
-import java.util.ArrayList;
 
 
 public class MainApplication {
@@ -15,10 +15,11 @@ public class MainApplication {
         DividedText dividedText = new DividedText(text);
 
         TaskNumberOne taskNumberOne = new TaskNumberOne(dividedText);
-        ArrayList<String> allWords = taskNumberOne.allWordsInTextCreator(taskNumberOne.getDividedText());
+        taskNumberOne.execute();
 
-        for (String word : allWords){
-            System.out.println(word + " ");
-        }
+        TaskNumberTwo taskNumberTwo = new TaskNumberTwo(dividedText, TaskNumberTwo.Position.LAST);
+        taskNumberTwo.execute();
+
+        System.out.println(dividedText.merge());
     }
 }

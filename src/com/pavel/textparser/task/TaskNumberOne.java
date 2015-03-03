@@ -9,11 +9,6 @@ public class TaskNumberOne {
     //Напечатать слова текста в алфавитном порядке по первой букве. Слова, начинающиеся с новой буквы, печатать
     //с красной строки.
     private DividedText dividedText;
-
-    public DividedText getDividedText() {
-        return dividedText;
-    }
-
     private ArrayList<String> allWordsInText;
     private ArrayList<String> allWordsInTextNoDuplicatesSorted;
 
@@ -23,7 +18,7 @@ public class TaskNumberOne {
         allWordsInTextNoDuplicatesSorted = sortWordsNoDuplicates(allWordsInText);
     }
 
-    public ArrayList<String> allWordsInTextCreator(DividedText dividedText){
+    private ArrayList<String> allWordsInTextCreator(DividedText dividedText){
         ArrayList<String> allWords = new ArrayList<String>();
         for (TextDividable paragraph : dividedText.getArrayOfSubs()){
             if (paragraph instanceof Paragraph){
@@ -50,4 +45,19 @@ public class TaskNumberOne {
         return sortedWordsNoDuplicates;
     }
 
+    public void execute(){
+        StringBuilder sb = new StringBuilder();
+        int i = 97;
+        for (String x : allWordsInTextNoDuplicatesSorted){
+            if (x.charAt(0) == (char)i){
+                sb.append(x + " ");
+            }
+            else {
+                sb.append("\n" + x + " ");
+                i = (int)(x.charAt(0));
+            }
+        }
+        System.out.println("Result of Task #1:");
+        System.out.println(sb);
+    }
 }
