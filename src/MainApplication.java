@@ -1,6 +1,6 @@
 import com.pavel.textparser.task.TaskNumberOne;
-import com.pavel.textparser.entity.DividedText;
-import com.pavel.textparser.logics.TextManager;
+import com.pavel.textparser.entity.complicated.DividedText;
+import com.pavel.textparser.util.UniversalFileReader;
 import com.pavel.textparser.task.TaskNumberTwo;
 import org.apache.log4j.Logger;
 
@@ -11,13 +11,12 @@ public class MainApplication {
 
     public static Logger logger = Logger.getLogger(MainApplication.class);
 
-    public static void main(String[] args){
+    public static void main (String[] args) throws IOException{
 
 
-        TextManager textManager = new TextManager();
         String text = "";
         try {
-            text = textManager.readFile("d:/1.txt");
+            text = UniversalFileReader.readFile("e:/1.txt");
         }
         catch (FileNotFoundException e){
             logger.error("File was not found!", e);

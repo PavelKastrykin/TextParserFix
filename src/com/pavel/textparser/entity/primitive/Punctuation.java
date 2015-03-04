@@ -1,9 +1,11 @@
-package com.pavel.textparser.entity;
+package com.pavel.textparser.entity.primitive;
+
+import com.pavel.textparser.entity.ParseableText;
 
 /**
  * Class Punctuation contains symbols from the beginning and the end of WordComplicated as String
  */
-public class Punctuation implements TextDividable{
+public class Punctuation implements ParseableText {
     private String punctuation;
 
     public String getPunctuation() {

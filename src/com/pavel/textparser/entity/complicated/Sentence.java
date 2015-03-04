@@ -1,5 +1,6 @@
-package com.pavel.textparser.entity;
+package com.pavel.textparser.entity.complicated;
 
+import com.pavel.textparser.entity.ParseableText;
 import com.pavel.textparser.splitter.SentenceSplitter;
 
 import java.util.List;
@@ -9,11 +10,11 @@ import java.util.List;
  * by rules and by means of described in SentenceSplitter class.
  */
 
-public class Sentence implements TextDividable{
-    private List<TextDividable> arrayOfSubs;
+public class Sentence implements ParseableText {
+    private List<ParseableText> arrayOfSubs;
     private SentenceSplitter sentenceSplitter = new SentenceSplitter();
 
-    public List<TextDividable> getArrayOfSubs() {
+    public List<ParseableText> getArrayOfSubs() {
         return arrayOfSubs;
     }
 
@@ -27,7 +28,7 @@ public class Sentence implements TextDividable{
     @Override
     public String merge(){
         StringBuilder sb = new StringBuilder();
-        for (TextDividable x : this.arrayOfSubs){
+        for (ParseableText x : this.arrayOfSubs){
             sb.append(x.merge());
         }
         return sb.toString();

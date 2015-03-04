@@ -1,6 +1,8 @@
 package com.pavel.textparser.splitter;
 
 import com.pavel.textparser.entity.*;
+import com.pavel.textparser.entity.complicated.Paragraph;
+import com.pavel.textparser.entity.primitive.Code;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -9,10 +11,10 @@ import java.util.regex.Pattern;
 /**
  * Splits TextDivadable into combined ArrayList of <Paragraph> and <Code>
  */
-public class TextSplitter {
+public class TextSplitter implements Splitter{
 
-    public List<TextDividable> splitText(String string){
-        List<TextDividable> arrayOfParagraphs = new ArrayList<TextDividable>();
+    public List<ParseableText> splitText(String string){
+        List<ParseableText> arrayOfParagraphs = new ArrayList<ParseableText>();
         boolean isText = true;
         while (string.length() > 0){
             if (isText){

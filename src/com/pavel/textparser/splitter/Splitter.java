@@ -1,9 +1,9 @@
 package com.pavel.textparser.splitter;
 
-import com.pavel.textparser.entity.TextDividable;
+import com.pavel.textparser.entity.ParseableText;
 
 import java.util.List;
 
 public interface Splitter {
-    List<TextDividable> splitText(String string);
+    List<ParseableText> splitText(String string);
 }

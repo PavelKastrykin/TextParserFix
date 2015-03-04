@@ -1,9 +1,11 @@
-package com.pavel.textparser.entity;
+package com.pavel.textparser.entity.primitive;
+
+import com.pavel.textparser.entity.ParseableText;
 
 import java.lang.Override;
 import java.lang.String;
 
-public class WordSimple implements TextDividable{
+public class WordSimple implements ParseableText {
     private String wordSimple;
 
     public String getWordSimple(){

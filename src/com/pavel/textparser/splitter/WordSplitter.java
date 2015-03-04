@@ -1,8 +1,8 @@
 package com.pavel.textparser.splitter;
 
-import com.pavel.textparser.entity.Punctuation;
-import com.pavel.textparser.entity.TextDividable;
-import com.pavel.textparser.entity.WordSimple;
+import com.pavel.textparser.entity.primitive.Punctuation;
+import com.pavel.textparser.entity.ParseableText;
+import com.pavel.textparser.entity.primitive.WordSimple;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -14,8 +14,8 @@ import java.util.regex.Pattern;
  */
 public class WordSplitter {
 
-    public List<TextDividable> splitText(String string){
-        List<TextDividable> arrayOfSimpleWordsAndPunctuation = new ArrayList<TextDividable>();
+    public List<ParseableText> splitText(String string){
+        List<ParseableText> arrayOfSimpleWordsAndPunctuation = new ArrayList<ParseableText>();
         while (string.length() > 0){
             if(!string.matches("^[a-zA-Z].*$")){
                 arrayOfSimpleWordsAndPunctuation.add(new Punctuation(string.substring(0, 1)));

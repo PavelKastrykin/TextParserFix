@@ -1,8 +1,15 @@
 package com.pavel.textparser.task;
 
 import com.pavel.textparser.entity.*;
+import com.pavel.textparser.entity.complicated.DividedText;
+import com.pavel.textparser.entity.complicated.Paragraph;
+import com.pavel.textparser.entity.complicated.Sentence;
+import com.pavel.textparser.entity.complicated.WordComplicated;
+import com.pavel.textparser.entity.primitive.WordSimple;
 
 public class TaskNumberTwo {
+    /*Преобразовать каждое слово в тексте, удалив из него все последующие (предыдущие) вхождения первой (последней)
+    буквы этого слова*/
 
     private DividedText dividedText;
     public enum Position{
@@ -17,11 +24,11 @@ public class TaskNumberTwo {
     }
 
     public void execute(){
-        for (TextDividable paragraph : dividedText.getArrayOfSubs()){
+        for (ParseableText paragraph : dividedText.getArrayOfSubs()){
             if (paragraph instanceof Paragraph){
-                for (TextDividable sentence : ((Paragraph) paragraph).getArrayOfSubs()){
-                    for (TextDividable wordComplicated : ((Sentence)sentence).getArrayOfSubs()){
-                        for (TextDividable word : ((WordComplicated)wordComplicated).getArrayOfSubs()){
+                for (ParseableText sentence : ((Paragraph) paragraph).getArrayOfSubs()){
+                    for (ParseableText wordComplicated : ((Sentence)sentence).getArrayOfSubs()){
+                        for (ParseableText word : ((WordComplicated)wordComplicated).getArrayOfSubs()){
                             if (word instanceof WordSimple){
                                 ((WordSimple) word).setWordSimple(replaceChars(((WordSimple) word).getWordSimple(), position));
 
