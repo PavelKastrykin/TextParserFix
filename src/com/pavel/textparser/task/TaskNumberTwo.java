@@ -2,8 +2,6 @@ package com.pavel.textparser.task;
 
 import com.pavel.textparser.entity.*;
 
-import java.util.ArrayList;
-
 public class TaskNumberTwo {
 
     private DividedText dividedText;
@@ -26,6 +24,7 @@ public class TaskNumberTwo {
                         for (TextDividable word : ((WordComplicated)wordComplicated).getArrayOfSubs()){
                             if (word instanceof WordSimple){
                                 ((WordSimple) word).setWordSimple(replaceChars(((WordSimple) word).getWordSimple(), position));
+
                             }
                         }
                     }

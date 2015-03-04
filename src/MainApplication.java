@@ -7,7 +7,6 @@ import org.apache.log4j.Logger;
 import java.io.FileNotFoundException;
 import java.io.IOException;import java.lang.String;
 
-
 public class MainApplication {
 
     public static Logger logger = Logger.getLogger(MainApplication.class);

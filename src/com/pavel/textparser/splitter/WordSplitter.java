@@ -9,6 +9,9 @@ import java.util.List;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
+/**
+ * Splits WordComplicated into combined ArrayList of <WordSimple> and <Punctuation>
+ */
 public class WordSplitter {
 
     public List<TextDividable> splitText(String string){

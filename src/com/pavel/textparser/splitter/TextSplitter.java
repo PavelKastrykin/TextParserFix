@@ -6,6 +6,9 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.regex.Pattern;
 
+/**
+ * Splits TextDivadable into combined ArrayList of <Paragraph> and <Code>
+ */
 public class TextSplitter {
 
     public List<TextDividable> splitText(String string){

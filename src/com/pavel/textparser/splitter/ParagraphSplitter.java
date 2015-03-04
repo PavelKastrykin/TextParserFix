@@ -7,7 +7,10 @@ import java.lang.String;import java.util.ArrayList;
 import java.util.List;
 import java.util.regex.Pattern;
 
-public class ParagraphSplitter {
+/**
+ *Splits Paragraph into ArrayList of <Sentence>.
+ */
+public class ParagraphSplitter implements Splitter{
 
     public List<TextDividable> splitText(String string){
         List<TextDividable> arrayOfSentences = new ArrayList<TextDividable>();

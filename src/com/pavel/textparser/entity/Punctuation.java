@@ -1,7 +1,7 @@
 package com.pavel.textparser.entity;
 
 /**
- * Created by Pachon on 01.03.2015.
+ * Class Punctuation contains symbols from the beginning and the end of WordComplicated as String
  */
 public class Punctuation implements TextDividable{
     private String punctuation;
@@ -14,6 +14,9 @@ public class Punctuation implements TextDividable{
         this.punctuation = value;
     }
 
+    /**
+     * @return String representation of Punctuation
+     */
     @Override
     public String merge(){
         return punctuation;

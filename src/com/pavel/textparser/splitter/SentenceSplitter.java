@@ -7,7 +7,10 @@ import java.lang.String;import java.util.ArrayList;
 import java.util.List;
 import java.util.regex.Pattern;
 
-public class SentenceSplitter {
+/**
+ * Splits Sentences into ArrayList of <WordComplicated>
+ */
+public class SentenceSplitter implements Splitter{
     private List<String> sentenceSplitted = new ArrayList<String>();
 
     public List<String> getSentenceSplitted(){
