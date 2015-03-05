@@ -1,6 +1,6 @@
 package com.pavel.textparser.splitter;
 
-import com.pavel.textparser.entity.ParseableText;
+import com.pavel.textparser.model.ParseableText;
 
 import java.util.List;
 

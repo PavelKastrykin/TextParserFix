@@ -1,8 +1,8 @@
 package com.pavel.textparser.splitter;
 
-import com.pavel.textparser.entity.*;
-import com.pavel.textparser.entity.complicated.Paragraph;
-import com.pavel.textparser.entity.primitive.Code;
+import com.pavel.textparser.model.*;
+import com.pavel.textparser.model.complicated.Paragraph;
+import com.pavel.textparser.model.primitive.Code;
 
 import java.util.ArrayList;
 import java.util.List;

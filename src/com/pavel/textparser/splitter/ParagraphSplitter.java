@@ -1,7 +1,7 @@
 package com.pavel.textparser.splitter;
 
-import com.pavel.textparser.entity.complicated.Sentence;
-import com.pavel.textparser.entity.ParseableText;
+import com.pavel.textparser.model.complicated.Sentence;
+import com.pavel.textparser.model.ParseableText;
 
 import java.lang.String;import java.util.ArrayList;
 import java.util.List;

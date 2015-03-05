@@ -1,5 +1,5 @@
 import com.pavel.textparser.task.TaskNumberOne;
-import com.pavel.textparser.entity.complicated.DividedText;
+import com.pavel.textparser.model.complicated.DividedText;
 import com.pavel.textparser.util.UniversalFileReader;
 import com.pavel.textparser.task.TaskNumberTwo;
 import org.apache.log4j.Logger;

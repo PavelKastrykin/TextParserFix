@@ -1,4 +1,4 @@
-package com.pavel.textparser.entity;
+package com.pavel.textparser.model;
 
 /**
  * Interface ParseableText describes parts of a text, that can be divided into sub-parts. All sub-parts also must

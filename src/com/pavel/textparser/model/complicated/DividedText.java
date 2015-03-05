@@ -1,6 +1,6 @@
-package com.pavel.textparser.entity.complicated;
+package com.pavel.textparser.model.complicated;
 
-import com.pavel.textparser.entity.ParseableText;
+import com.pavel.textparser.model.ParseableText;
 import com.pavel.textparser.splitter.TextSplitter;
 
 import java.lang.Override;import java.lang.String;import java.lang.StringBuilder;import java.util.List;

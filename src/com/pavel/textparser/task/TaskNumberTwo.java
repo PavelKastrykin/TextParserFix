@@ -1,11 +1,11 @@
 package com.pavel.textparser.task;
 
-import com.pavel.textparser.entity.*;
-import com.pavel.textparser.entity.complicated.DividedText;
-import com.pavel.textparser.entity.complicated.Paragraph;
-import com.pavel.textparser.entity.complicated.Sentence;
-import com.pavel.textparser.entity.complicated.WordComplicated;
-import com.pavel.textparser.entity.primitive.WordSimple;
+import com.pavel.textparser.model.*;
+import com.pavel.textparser.model.complicated.DividedText;
+import com.pavel.textparser.model.complicated.Paragraph;
+import com.pavel.textparser.model.complicated.Sentence;
+import com.pavel.textparser.model.complicated.WordComplicated;
+import com.pavel.textparser.model.primitive.WordSimple;
 
 public class TaskNumberTwo {
     /*Преобразовать каждое слово в тексте, удалив из него все последующие (предыдущие) вхождения первой (последней)

@@ -1,8 +1,8 @@
 package com.pavel.textparser.splitter;
 
-import com.pavel.textparser.entity.primitive.Punctuation;
-import com.pavel.textparser.entity.ParseableText;
-import com.pavel.textparser.entity.primitive.WordSimple;
+import com.pavel.textparser.model.primitive.Punctuation;
+import com.pavel.textparser.model.ParseableText;
+import com.pavel.textparser.model.primitive.WordSimple;
 
 import java.util.ArrayList;
 import java.util.List;

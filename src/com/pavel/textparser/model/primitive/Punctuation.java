@@ -1,6 +1,6 @@
-package com.pavel.textparser.entity.primitive;
+package com.pavel.textparser.model.primitive;
 
-import com.pavel.textparser.entity.ParseableText;
+import com.pavel.textparser.model.ParseableText;
 
 /**
  * Class Punctuation contains symbols from the beginning and the end of WordComplicated as String
