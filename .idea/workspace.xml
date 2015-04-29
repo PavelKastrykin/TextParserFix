@@ -7,18 +7,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7efd6b7c-bfc8-4042-ae05-5c8e2a7dcc08" name="Default" comment="">
-      <change type="DELETED" beforePath="C:\Users\Pachon\IdeaProjects\TextParserFix\out\production\TextParserFix\MainApplication.class" afterPath="" />
-      <change type="MOVED" beforePath="C:\Users\Pachon\IdeaProjects\TextParserFix\src\MainApplication.java" afterPath="$PROJECT_DIR$/src/com/pavel/textparser/main/MainApplication.java" />
-      <change type="MOVED" beforePath="C:\Users\Pachon\IdeaProjects\TextParserFix\src\com\pavel\textparser\resources\log4j.properties" afterPath="$PROJECT_DIR$/src/com/pavel/textparser/log4j.properties" />
-      <change type="MOVED" beforePath="C:\Users\Pachon\IdeaProjects\TextParserFix\src\com\pavel\textparser\splitter\RegExp.java" afterPath="$PROJECT_DIR$/src/com/pavel/textparser/splitter/SplitterRegExp.java" />
-      <change type="MOVED" beforePath="C:\Users\Pachon\IdeaProjects\TextParserFix\src\com\pavel\textparser\task\TaskNumberOne.java" afterPath="$PROJECT_DIR$/src/com/pavel/textparser/task/TaskAllWordsInText.java" />
-      <change type="MOVED" beforePath="C:\Users\Pachon\IdeaProjects\TextParserFix\src\com\pavel\textparser\task\TaskNumberTwo.java" afterPath="$PROJECT_DIR$/src/com/pavel/textparser/task/TaskChangeLetters.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/META-INF/MANIFEST.MF" afterPath="$PROJECT_DIR$/src/META-INF/MANIFEST.MF" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/pavel/textparser/splitter/ParagraphSplitter.java" afterPath="$PROJECT_DIR$/src/com/pavel/textparser/splitter/ParagraphSplitter.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/pavel/textparser/splitter/SentenceSplitter.java" afterPath="$PROJECT_DIR$/src/com/pavel/textparser/splitter/SentenceSplitter.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/TextParserFix.iml" afterPath="$PROJECT_DIR$/TextParserFix.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/pavel/textparser/splitter/TextSplitter.java" afterPath="$PROJECT_DIR$/src/com/pavel/textparser/splitter/TextSplitter.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/pavel/textparser/splitter/WordSplitter.java" afterPath="$PROJECT_DIR$/src/com/pavel/textparser/splitter/WordSplitter.java" />
+      <change type="DELETED" beforePath="C:\Users\Pachon\IdeaProjects\TextParserFix\out\production\TextParserFix\com\pavel\textparser\splitter\RegExp.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Pachon\IdeaProjects\TextParserFix\out\production\TextParserFix\com\pavel\textparser\task\TaskNumberOne.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Pachon\IdeaProjects\TextParserFix\out\production\TextParserFix\com\pavel\textparser\task\TaskNumberTwo$1.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Pachon\IdeaProjects\TextParserFix\out\production\TextParserFix\com\pavel\textparser\task\TaskNumberTwo$Position.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Pachon\IdeaProjects\TextParserFix\out\production\TextParserFix\com\pavel\textparser\task\TaskNumberTwo.class" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/TextParserFix/com/pavel/textparser/splitter/ParagraphSplitter.class" afterPath="$PROJECT_DIR$/out/production/TextParserFix/com/pavel/textparser/splitter/ParagraphSplitter.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/TextParserFix/com/pavel/textparser/splitter/SentenceSplitter.class" afterPath="$PROJECT_DIR$/out/production/TextParserFix/com/pavel/textparser/splitter/SentenceSplitter.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/TextParserFix/com/pavel/textparser/splitter/TextSplitter.class" afterPath="$PROJECT_DIR$/out/production/TextParserFix/com/pavel/textparser/splitter/TextSplitter.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/TextParserFix/com/pavel/textparser/splitter/WordSplitter.class" afterPath="$PROJECT_DIR$/out/production/TextParserFix/com/pavel/textparser/splitter/WordSplitter.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="TextParserFix.iws" />
@@ -617,7 +614,7 @@
       <workItem from="1425585503038" duration="589000" />
       <workItem from="1425586223950" duration="5769000" />
       <workItem from="1425759873075" duration="629000" />
-      <workItem from="1430304334601" duration="1017000" />
+      <workItem from="1430304334601" duration="1716000" />
     </task>
     <task id="LOCAL-00001" summary="ant added">
       <created>1425594876223</created>
@@ -625,11 +622,17 @@
       <option name="project" value="LOCAL" />
       <updated>1425594876223</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="ant added">
+      <created>1430308214874</created>
+      <option name="number" value="00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1430308214874</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="8004000" />
+    <option name="totallyTimeSpent" value="8703000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="0" />
