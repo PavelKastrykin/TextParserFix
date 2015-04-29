@@ -1,7 +1,9 @@
-import com.pavel.textparser.task.TaskNumberOne;
+package com.pavel.textparser.main;
+
+import com.pavel.textparser.task.TaskAllWordsInText;
 import com.pavel.textparser.model.complicated.DividedText;
 import com.pavel.textparser.util.UniversalFileReader;
-import com.pavel.textparser.task.TaskNumberTwo;
+import com.pavel.textparser.task.TaskChangeLetters;
 import org.apache.log4j.Logger;
 
 import java.io.FileNotFoundException;
@@ -27,11 +29,11 @@ public class MainApplication {
 
         DividedText dividedText = new DividedText(text);
 
-        TaskNumberOne taskNumberOne = new TaskNumberOne(dividedText);
-        taskNumberOne.execute();
+        TaskAllWordsInText taskAllWordsInText = new TaskAllWordsInText(dividedText);
+        taskAllWordsInText.execute();
 
-        TaskNumberTwo taskNumberTwo = new TaskNumberTwo(dividedText, TaskNumberTwo.Position.LAST);
-        taskNumberTwo.execute();
+        TaskChangeLetters taskChangeLetters = new TaskChangeLetters(dividedText, TaskChangeLetters.Position.LAST);
+        taskChangeLetters.execute();
 
         System.out.println(dividedText.merge());
     }

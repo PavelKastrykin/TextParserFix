@@ -22,7 +22,7 @@ public class WordSplitter {
                 string = string.substring(1, string.length());
                 continue;
             }
-            Pattern pattern = Pattern.compile(RegExp.SIMPLE_WORD_MATCH_PATTERN);
+            Pattern pattern = Pattern.compile(SplitterRegExp.SIMPLE_WORD_MATCH_PATTERN);
             Matcher matcher = pattern.matcher(string);
             if (matcher.find()){
                 String textPart = string.substring(0, matcher.end());

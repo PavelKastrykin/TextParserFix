@@ -18,14 +18,14 @@ public class TextSplitter implements Splitter{
         boolean isText = true;
         while (string.length() > 0){
             if (isText){
-                String textPart = string.substring(0, RegExp.matcherPatternIndex(string, RegExp.CODE_START_PATTERN) + 1);
+                String textPart = string.substring(0, SplitterRegExp.matcherPatternIndex(string, SplitterRegExp.CODE_START_PATTERN) + 1);
                 arrayOfParagraphs.add(new Paragraph(textPart));
                 string = string.replaceFirst(Pattern.quote(textPart), "");
                 isText = !isText;
                 continue;
             }
             if (!isText){
-                String textPart = string.substring(0, RegExp.matcherPatternIndex(string, RegExp.CODE_END_PATTERN) + 4);
+                String textPart = string.substring(0, SplitterRegExp.matcherPatternIndex(string, SplitterRegExp.CODE_END_PATTERN) + 4);
                 arrayOfParagraphs.add(new Code(textPart));
                 string = string.replaceFirst(Pattern.quote(textPart), "");
                 isText = !isText;

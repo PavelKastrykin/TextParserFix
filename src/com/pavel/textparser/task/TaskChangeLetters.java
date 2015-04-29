@@ -7,7 +7,7 @@ import com.pavel.textparser.model.complicated.Sentence;
 import com.pavel.textparser.model.complicated.WordComplicated;
 import com.pavel.textparser.model.primitive.WordSimple;
 
-public class TaskNumberTwo {
+public class TaskChangeLetters {
     /*Преобразовать каждое слово в тексте, удалив из него все последующие (предыдущие) вхождения первой (последней)
     буквы этого слова*/
 
@@ -18,7 +18,7 @@ public class TaskNumberTwo {
 
     private Position position;
 
-    public TaskNumberTwo(DividedText dividedText, Position position){
+    public TaskChangeLetters(DividedText dividedText, Position position){
         this.dividedText = dividedText;
         this.position = position;
     }

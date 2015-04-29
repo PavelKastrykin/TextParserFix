@@ -21,7 +21,7 @@ public class SentenceSplitter implements Splitter{
 
         List<ParseableText> arrayOfComplicatedWords = new ArrayList<ParseableText>();
         while (string.length() > 0){
-            String textPart = string.substring(0, RegExp.matcherPatternIndex(string, RegExp.WORD_END_PATTERN) + 1);
+            String textPart = string.substring(0, SplitterRegExp.matcherPatternIndex(string, SplitterRegExp.WORD_END_PATTERN) + 1);
             arrayOfComplicatedWords.add(new WordComplicated(textPart));
             string = string.replaceFirst(Pattern.quote(textPart), "");
         }

@@ -10,14 +10,14 @@ import com.pavel.textparser.model.primitive.WordSimple;
 import java.lang.String;
 import java.util.*;
 
-public class TaskNumberOne {
+public class TaskAllWordsInText {
     /*Напечатать слова текста в алфавитном порядке по первой букве. Слова, начинающиеся с новой буквы, печатать
     с красной строки.*/
     private DividedText dividedText;
     private ArrayList<String> allWordsInText;
     private ArrayList<String> allWordsInTextNoDuplicatesSorted;
 
-    public TaskNumberOne(DividedText dividedText){
+    public TaskAllWordsInText(DividedText dividedText){
         this.dividedText = dividedText;
         allWordsInText = allWordsInTextCreator(dividedText);
         allWordsInTextNoDuplicatesSorted = sortWordsNoDuplicates(allWordsInText);
@@ -62,7 +62,5 @@ public class TaskNumberOne {
                 i = (int)(x.charAt(0));
             }
         }
-        System.out.println("Result of Task #1:");
-        System.out.println(sb);
     }
 }
